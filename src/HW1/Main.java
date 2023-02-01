@@ -7,8 +7,6 @@ public class Main {
     public static boolean isStillRunning = true;
 
     public static void main(String[] args) {
-        int[][] listOfNumbers = new int[2][4];
-
         while (isStillRunning) {
             System.out.print("Please select what HW you want to run? (exit for close) ");
             String command = Console.get.next();
@@ -26,6 +24,8 @@ class Factory {
                 return new First();
             case "second":
                 return new Second();
+            case "third":
+                return new Third();
 
         }
         return null;
@@ -129,8 +129,32 @@ class Stack {
 
 }
 
+
+class Third implements Command {
+
+    @Override
+    public void execute() {
+        System.out.println("Enter number of pyramid line: ");
+        int lines = Console.get.nextInt();
+
+        for (int i = 0; i <= lines; ++i) {
+            for (int space = 1; space <= lines - i; ++space) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+
+
+    }
+}
+
+
 class Console {
     public static Scanner get = new Scanner(System.in);
+
 }
 
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(quiz): quiz questions implemented">
+    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(second): second homework is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HW1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW1/Main.java" afterDir="false" />
     </list>
@@ -84,6 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW1.Main" />
+      <module name="maktabsharif-java-92" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HW1.Main" />
       <module name="maktabsharif-java-92" />
@@ -97,26 +110,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Quiz.second.Test" />
-      <module name="maktabsharif-java-92" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Quiz.second.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +130,8 @@
       <updated>1675001002545</updated>
       <workItem from="1675001003609" duration="3100000" />
       <workItem from="1675175665471" duration="1553000" />
-      <workItem from="1675218883691" duration="1683000" />
+      <workItem from="1675218883691" duration="2436000" />
+      <workItem from="1675223383648" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675001067012</created>
@@ -160,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675218919623</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat(second): second homework is done">
+      <created>1675220610155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675220610155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +190,7 @@
     <MESSAGE value="feat(remote control): command design panel foundation laid" />
     <MESSAGE value="feat(first): first homework implemented" />
     <MESSAGE value="feat(quiz): quiz questions implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(quiz): quiz questions implemented" />
+    <MESSAGE value="feat(second): second homework is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(second): second homework is done" />
   </component>
 </project>
