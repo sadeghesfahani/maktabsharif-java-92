@@ -29,7 +29,8 @@ class Factory {
                 return new Third();
             case "forth":
                 return new Forth();  // I'm pretty sure the algorithm I used is awful, didn't want to look it up.
-
+            case "fifth":
+                return new Fifth();
         }
         return null;
     }
@@ -198,14 +199,14 @@ class Forth implements Command {
         findMaxLengthAndNumber(representativeBooleanList);
     }
 
-    private void findDecremental(){
+    private void findDecremental() {
         int[][] allDecrementalSeries = new int[series.length][series.length]; // for the case we need them
         boolean[][] representativeBooleanList = new boolean[series.length][series.length];
         int outerIndex = 0;
         int innerIndex = 0;
         int max = series[0];
         for (int i = 0; i < series.length; i++) {
-            if (max>= series[i]) {
+            if (max >= series[i]) {
                 allDecrementalSeries[outerIndex][innerIndex] = series[i];
                 representativeBooleanList[outerIndex][innerIndex] = true;
                 innerIndex++;
@@ -221,7 +222,8 @@ class Forth implements Command {
         }
         findMaxLengthAndNumber(representativeBooleanList);
     }
-    private void findMaxLengthAndNumber(boolean[][] representativeBooleanList){
+
+    private void findMaxLengthAndNumber(boolean[][] representativeBooleanList) {
         int numberOfIncrementalSeries = 0;
         int biggestNumber = 0;
         for (int i = 0; i < representativeBooleanList.length; i++) {
@@ -245,6 +247,83 @@ class Forth implements Command {
         System.out.println("number of subsequence: " + numberOfIncrementalSeries);
     }
 
+}
+
+
+class Fifth implements Command {
+
+    private ExpandableList expandableList = new ExpandableList();
+    private boolean stillRunning = true;
+
+    @Override
+    public void execute() {
+        System.out.println("Enter as much number as you want, when finished, type exit:");
+        while (stillRunning) {
+            String input = Console.get.next();
+            if (input.equals("exit")) {
+                stillRunning = false; // it could have been implemented with while true and break, this way feels better
+            } else {
+                expandableList.push(Integer.parseInt(input));
+            }
+        }
+        findDifferentiate();
+
+    }
+
+    private void findDifferentiate() {
+        int[] finalList = expandableList.getListItem(); // it could have been used directly, but it might be used several time in a real world application. so, I explicitly destructured it to avoid CPU hit as much as possible.
+        int max = finalList[0];
+        int min = finalList[0];
+
+        for (int i = 0; i < finalList.length; i++) {
+
+            if(finalList[i]>max){
+                max = finalList[i];
+            }
+            if(finalList[i]<min){
+                min=finalList[i];
+            }
+
+        }
+        int maxDifferentiate = max - min;
+        int minDifferentiate = maxDifferentiate;
+        for (int i = 0; i < finalList.length; i++) {
+            for (int j = 0; j < finalList.length; j++) {
+                if (i != j) {
+                    int def = Math.abs(finalList[i] - finalList[j]);
+                    if(def<minDifferentiate){
+                        minDifferentiate = def;
+                    }
+
+                }
+            }
+        }
+
+        System.out.println("Max differentiate: " + maxDifferentiate);
+        System.out.println("min differentiate: " + minDifferentiate);
+
+    }
+}
+
+
+class ExpandableList {
+    private int[] listItem = new int[2];
+    private int index = 0;
+
+    public void push(int item) {
+        if (index > listItem.length - 1) {
+            int[] newListItem = new int[listItem.length * 2];
+            for (int i = 0; i < listItem.length; i++) {
+                newListItem[i] = listItem[i];
+            }
+            listItem = newListItem;
+        }
+        listItem[index++] = item;
+    }
+
+    public int[] getListItem() {
+        return listItem;
+    }
 }
 
 class Console {
