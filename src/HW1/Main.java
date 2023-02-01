@@ -1,5 +1,6 @@
 package HW1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -26,6 +27,8 @@ class Factory {
                 return new Second();
             case "third":
                 return new Third();
+            case "forth":
+                return new Forth();  // I'm pretty sure the algorithm I used is awful, didn't want to look it up.
 
         }
         return null;
@@ -151,6 +154,98 @@ class Third implements Command {
     }
 }
 
+
+class Forth implements Command {
+    private int[] series;
+
+    @Override
+    public void execute() {
+        System.out.println("How many numbers you will enter? ");
+        int numberOfItems = Console.get.nextInt();
+        series = new int[numberOfItems];
+        System.out.println("Enter numbers: ");
+        for (int i = 0; i < numberOfItems; i++) {
+            series[i] = Console.get.nextInt();
+        }
+        System.out.println("Incremental info:");
+        findIncremental();
+        System.out.println("Decremental info:");
+        findDecremental();
+
+    }
+
+    private void findIncremental() {
+        int[][] allIncrementalSeries = new int[series.length][series.length]; // for the case we need them
+        boolean[][] representativeBooleanList = new boolean[series.length][series.length];
+        int outerIndex = 0;
+        int innerIndex = 0;
+        int min = series[0];
+        for (int i = 0; i < series.length; i++) {
+            if (min <= series[i]) {
+                allIncrementalSeries[outerIndex][innerIndex] = series[i];
+                representativeBooleanList[outerIndex][innerIndex] = true;
+                innerIndex++;
+                min = series[i];
+            } else {
+                min = series[i];
+                outerIndex++;
+                innerIndex = 0;
+                allIncrementalSeries[outerIndex][innerIndex] = series[i];
+                representativeBooleanList[outerIndex][innerIndex] = true;
+                innerIndex++;
+            }
+        }
+        findMaxLengthAndNumber(representativeBooleanList);
+    }
+
+    private void findDecremental(){
+        int[][] allDecrementalSeries = new int[series.length][series.length]; // for the case we need them
+        boolean[][] representativeBooleanList = new boolean[series.length][series.length];
+        int outerIndex = 0;
+        int innerIndex = 0;
+        int max = series[0];
+        for (int i = 0; i < series.length; i++) {
+            if (max>= series[i]) {
+                allDecrementalSeries[outerIndex][innerIndex] = series[i];
+                representativeBooleanList[outerIndex][innerIndex] = true;
+                innerIndex++;
+                max = series[i];
+            } else {
+                max = series[i];
+                outerIndex++;
+                innerIndex = 0;
+                allDecrementalSeries[outerIndex][innerIndex] = series[i];
+                representativeBooleanList[outerIndex][innerIndex] = true;
+                innerIndex++;
+            }
+        }
+        findMaxLengthAndNumber(representativeBooleanList);
+    }
+    private void findMaxLengthAndNumber(boolean[][] representativeBooleanList){
+        int numberOfIncrementalSeries = 0;
+        int biggestNumber = 0;
+        for (int i = 0; i < representativeBooleanList.length; i++) {
+            int tempCounter = 0;
+            for (int j = 0; j < representativeBooleanList[i].length; j++) {
+                if (representativeBooleanList[i][j]) {
+                    tempCounter++;
+                } else {
+                    break;
+                }
+            }
+            if (tempCounter > 1) {
+
+                numberOfIncrementalSeries++;
+                if (tempCounter > biggestNumber) {
+                    biggestNumber = tempCounter;
+                }
+            }
+        }
+        System.out.println("maxlength of subsequence: " + biggestNumber);
+        System.out.println("number of subsequence: " + numberOfIncrementalSeries);
+    }
+
+}
 
 class Console {
     public static Scanner get = new Scanner(System.in);

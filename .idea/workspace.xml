@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(second): second homework is done">
+    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(third): third homework is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HW1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW1/Main.java" afterDir="false" />
     </list>
@@ -131,7 +131,7 @@
       <workItem from="1675001003609" duration="3100000" />
       <workItem from="1675175665471" duration="1553000" />
       <workItem from="1675218883691" duration="2436000" />
-      <workItem from="1675223383648" duration="885000" />
+      <workItem from="1675223383648" duration="4708000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675001067012</created>
@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675220610155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(third): third homework is done">
+      <created>1675224290714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675224290714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="feat(first): first homework implemented" />
     <MESSAGE value="feat(quiz): quiz questions implemented" />
     <MESSAGE value="feat(second): second homework is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(second): second homework is done" />
+    <MESSAGE value="feat(third): third homework is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(third): third homework is done" />
   </component>
 </project>
