@@ -141,7 +141,7 @@ class Third implements Command {
         System.out.println("Enter number of pyramid line: ");
         int lines = Console.get.nextInt();
 
-        for (int i = 0; i <= lines; ++i) {
+        for (int i = 0; i < lines; ++i) {
             for (int space = 1; space <= lines - i; ++space) {
                 System.out.print(" ");
             }
@@ -272,10 +272,11 @@ class Fifth implements Command {
 
     private void findDifferentiate() {
         int[] finalList = expandableList.getListItem(); // it could have been used directly, but it might be used several time in a real world application. so, I explicitly destructured it to avoid CPU hit as much as possible.
+        int index = expandableList.getIndex();
         int max = finalList[0];
         int min = finalList[0];
 
-        for (int i = 0; i < finalList.length; i++) {
+        for (int i = 0; i < index; i++) {
 
             if(finalList[i]>max){
                 max = finalList[i];
@@ -285,6 +286,7 @@ class Fifth implements Command {
             }
 
         }
+        System.out.println(max + " - " + min);
         int maxDifferentiate = max - min;
         int minDifferentiate = maxDifferentiate;
         for (int i = 0; i < finalList.length; i++) {
@@ -298,7 +300,6 @@ class Fifth implements Command {
                 }
             }
         }
-
         System.out.println("Max differentiate: " + maxDifferentiate);
         System.out.println("min differentiate: " + minDifferentiate);
 
@@ -322,7 +323,11 @@ class ExpandableList {
     }
 
     public int[] getListItem() {
+
         return listItem;
+    }
+    public int getIndex(){
+        return index;
     }
 }
 
