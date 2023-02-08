@@ -4,8 +4,12 @@ public class Q2 {
     public static void main(String[] args) {
         String sampleText = "this is something to consider coding with";
         Character[] listOfVowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
-        System.out.println(getNumberOfVowels(sampleText, listOfVowels));
-        System.out.println(getTotalCharacters(sampleText));
+        int numberOfVowels = getNumberOfVowels(sampleText,listOfVowels);
+        int numberOfTotal = getTotalCharacters(sampleText);
+        System.out.println(numberOfTotal-numberOfVowels);
+//        System.out.println(getNumberOfVowels(sampleText, listOfVowels));
+//        System.out.println(getTotalCharacters(sampleText));
+
 
 
     }
