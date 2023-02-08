@@ -1,7 +1,5 @@
 package HW2;
 
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class forth {
@@ -10,8 +8,8 @@ public class forth {
     private static int[][] map;
 
     public static void main(String[] args) {
-        int column = 3;
-        int row = 3;
+        int column = 4;
+        int row = 4;
         map = new int[row][column];
         boolean isGameFinished = false;
         String winner = "";
@@ -21,15 +19,15 @@ public class forth {
             fillColumn(inputColumn);
             drawMap();
             GameResult result = checkWinner();
-            if(result.isGameFinished){
+            if (result.isGameFinished) {
                 isGameFinished = true;
                 winner = result.winner;
             }
 
         }
-        if(!winner.equals("")){
+        if (!winner.equals("")) {
             System.out.println("winner: " + winner);
-        }else{
+        } else {
             System.out.println("it's a tie.");
         }
 
@@ -96,8 +94,90 @@ public class forth {
     }
 
     private static GameResult checkWinner() {
+        String winner = "";
+        winner = getWinner(winner, map);
+        if (winner.equals("")) {
+            int[][] traversed = reverseMap();
+            winner = getWinner(winner, traversed);
+        }
 
-        return new GameResult(true, "amir");
+        if (winner.equals("")) {
+            winner = checkDiameter();
+        }
+
+        return new GameResult(!winner.equals(""), winner);
+
+    }
+
+    private static String getWinner(String winner, int[][] matrix) {
+        for (int row = 0; row < matrix.length; row++) {
+            int firstCountRow = 0;
+            int secondCountRow = 0;
+            for (int column = 0; column < matrix[row].length; column++) {
+                if (matrix[row][column] == 1) {
+                    firstCountRow++;
+                } else if (matrix[row][column] == 2) {
+                    secondCountRow++;
+                }
+            }
+            if (firstCountRow >= 4) {
+                winner = "amir";
+            } else if (secondCountRow >= 4) {
+                winner = "ali";
+            }
+        }
+        return winner;
+    }
+
+    private static int[][] reverseMap() {
+        int[][] traversedMatrix = new int[map[0].length][map.length];
+        for (int i = 0; i < map.length; i++) {
+            for (int j = 0; j < map[0].length; j++) {
+                traversedMatrix[i][j] = map[j][i];
+            }
+        }
+        return traversedMatrix;
+    }
+
+    private static String checkDiameter() {
+        return extractPotentialWinnerFromMatrix(map);
+    }
+
+    private static String extractPotentialWinnerFromMatrix(int[][] matrix) {
+        int firstCounterOriginal = 0;
+        int firstCounterOther = 0;
+        int secondCounterOriginal = 0;
+        int secondCounterOther = 0;
+
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[0].length; column++) {
+                if (row == column) {
+                    if (matrix[row][column] == 1) {
+                        firstCounterOriginal++;
+                    } else if (matrix[row][column] == 2) {
+                        secondCounterOriginal++;
+                    }
+                }
+            }
+
+        }
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[0].length; column++) {
+                if (row + column == matrix.length - 1) {
+                    if (matrix[row][column] == 1) {
+                        firstCounterOther++;
+                    } else if (matrix[row][column] == 2) {
+                        secondCounterOther++;
+                    }
+                }
+            }
+        }
+        if (firstCounterOriginal >= 4 || firstCounterOther >= 4) {
+            return "amir";
+        } else if (secondCounterOriginal >= 4 || secondCounterOther >= 4) {
+            return "ali";
+        }
+        return "";
     }
 
 
