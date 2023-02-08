@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(friday): Q1,Q2">
+    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(CW2): Q2">
+      <change afterPath="$PROJECT_DIR$/src/HW2/first.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CW2/friday/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CW2/friday/Q2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,44 +32,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Application.CW2.friday.Q2">
+}</component>
+  <component name="RunManager" selected="Application.first">
     <configuration name="CW2.friday.Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CW2.friday.Q2" />
       <module name="maktabsharif-java-92" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="CW2.friday.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HW1.Main" />
-      <module name="maktabsharif-java-92" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HW1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,13 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="first" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW2.first" />
+      <module name="maktabsharif-java-92" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.first" />
         <item itemvalue="Application.CW2.friday.Q2" />
         <item itemvalue="Application.Q1" />
         <item itemvalue="Application.Q2" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +146,7 @@
       <workItem from="1675600494528" duration="44000" />
       <workItem from="1675600550058" duration="993000" />
       <workItem from="1675780467817" duration="2093000" />
+      <workItem from="1675828490057" duration="2487000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675001067012</created>
@@ -217,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675413096562</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat(CW2): Q2">
+      <created>1675828516290</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675828516290</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +253,19 @@
     <MESSAGE value="feat(fifth): fifth homework is done" />
     <MESSAGE value="feat(thu): thu" />
     <MESSAGE value="feat(friday): Q1,Q2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(friday): Q1,Q2" />
+    <MESSAGE value="feat(CW2): Q2" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(CW2): Q2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HW2/first.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
