@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(HW2): Q1 for three characters coded">
-      <change afterPath="$PROJECT_DIR$/src/HW2/second.java" afterDir="false" />
+    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(HW2): Q2 implemented">
+      <change afterPath="$PROJECT_DIR$/src/HW2/third.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.second">
+  <component name="RunManager" selected="Application.third">
     <configuration name="CW2.friday.Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CW2.friday.Q2" />
       <module name="maktabsharif-java-92" />
@@ -70,19 +70,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="CW2.friday.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CW2.Q2" />
-      <module name="maktabsharif-java-92" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CW2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,13 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW2.third" />
+      <module name="maktabsharif-java-92" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.third" />
         <item itemvalue="Application.second" />
         <item itemvalue="Application.first" />
         <item itemvalue="Application.CW2.friday.Q2" />
         <item itemvalue="Application.Q1" />
-        <item itemvalue="Application.Q2" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +146,7 @@
       <workItem from="1675600494528" duration="44000" />
       <workItem from="1675600550058" duration="993000" />
       <workItem from="1675780467817" duration="2093000" />
-      <workItem from="1675828490057" duration="3831000" />
+      <workItem from="1675828490057" duration="5927000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675001067012</created>
@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675831055203</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat(HW2): Q2 implemented">
+      <created>1675833798282</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675833798282</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +269,19 @@
     <MESSAGE value="feat(friday): Q1,Q2" />
     <MESSAGE value="feat(CW2): Q2" />
     <MESSAGE value="feat(HW2): Q1 for three characters coded" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(HW2): Q1 for three characters coded" />
+    <MESSAGE value="feat(HW2): Q2 implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(HW2): Q2 implemented" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HW2/third.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
