@@ -18,7 +18,7 @@ public class first {
 
     private static String[] permute(String args) {
         if (args.length() == 3) {
-            String[] allPermutes = new String[100];
+            String[] allPermutes = new String[6];
             int index = 0;
             char[] characters = args.toCharArray();
             for (int i = 0; i < args.length(); i++) {

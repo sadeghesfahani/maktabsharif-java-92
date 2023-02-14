@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(HW2): Q4 foundation laid">
+    <list default="true" id="8b138a7f-20ce-40c4-950f-93b80d211fd7" name="Changes" comment="feat(HW2): Q4 fully implemented">
+      <change afterPath="$PROJECT_DIR$/src/Quiz/third/first.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quiz/third/second.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW2/forth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW2/forth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HW2/first.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW2/first.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HW2/third.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW2/third.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,13 +54,13 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.forth">
-    <configuration name="CW2.friday.Q2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CW2.friday.Q2" />
+  <component name="RunManager" selected="Application.Quiz.third.second">
+    <configuration name="Quiz.third.first" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Quiz.third.first" />
       <module name="maktabsharif-java-92" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CW2.friday.*" />
+          <option name="PATTERN" value="Quiz.third.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,8 +68,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="first" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HW2.first" />
+    <configuration name="Quiz.third.second" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Quiz.third.second" />
+      <module name="maktabsharif-java-92" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Quiz.third.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="forth (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW2.forth" />
       <module name="maktabsharif-java-92" />
       <extension name="coverage">
         <pattern>
@@ -79,19 +96,6 @@
     </configuration>
     <configuration name="forth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HW2.forth" />
-      <module name="maktabsharif-java-92" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HW2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="second" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HW2.second" />
       <module name="maktabsharif-java-92" />
       <extension name="coverage">
         <pattern>
@@ -118,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Quiz.third.second" />
+        <item itemvalue="Application.Quiz.third.first" />
         <item itemvalue="Application.forth" />
+        <item itemvalue="Application.forth (1)" />
         <item itemvalue="Application.third" />
-        <item itemvalue="Application.second" />
-        <item itemvalue="Application.first" />
-        <item itemvalue="Application.CW2.friday.Q2" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +150,10 @@
       <workItem from="1675600494528" duration="44000" />
       <workItem from="1675600550058" duration="993000" />
       <workItem from="1675780467817" duration="2093000" />
-      <workItem from="1675828490057" duration="17922000" />
+      <workItem from="1675828490057" duration="18831000" />
+      <workItem from="1675919085709" duration="2343000" />
+      <workItem from="1676261207596" duration="2070000" />
+      <workItem from="1676389629738" duration="755000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675001067012</created>
@@ -253,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675844798950</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(HW2): Q4 fully implemented">
+      <created>1675860038099</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675860038099</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +300,8 @@
     <MESSAGE value="feat(HW2): Q2 implemented" />
     <MESSAGE value="feat(HW2): Q3 implemented" />
     <MESSAGE value="feat(HW2): Q4 foundation laid" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(HW2): Q4 foundation laid" />
+    <MESSAGE value="feat(HW2): Q4 fully implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(HW2): Q4 fully implemented" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

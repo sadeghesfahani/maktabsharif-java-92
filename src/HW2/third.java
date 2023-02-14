@@ -29,7 +29,9 @@ public static int calculateWaterLevel(int[] heights) {
 }
 
     public static void main(String[] args) {
-        int[] heights = {1, 2, 0, 3, 1, 0, 1, 2, 2, 1, 2, 0, 1};
+    //  {       4,5,4,5,4
+//        int[] heights = {1, 2, 0, 3, 1, 0, 1, 2, 2, 1, 2, 0, 1};
+        int[] heights = {3,0,2,0,4};
         int waterLevel = calculateWaterLevel(heights);
         System.out.println("Water level: " + waterLevel);
     }
